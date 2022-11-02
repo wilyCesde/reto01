@@ -27,6 +27,9 @@ export class AppComponent implements OnChanges, OnInit, OnDestroy {
     console.log('City ->', city);
     this.selection = city;
   }
+  onClear(): void {
+    this.selection = "";
+  }
 
 
 

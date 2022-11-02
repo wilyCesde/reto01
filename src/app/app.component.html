@@ -9,6 +9,9 @@
 
 
 <ul *ngFor="let city of cities">
-  <li [ngClass]="{'selected':true}">{{city}}</li>
+  <li (click)="onClicked(city)" [ngClass]="{'selected':city, selection}">{{city}}</li>
 
 </ul>
+<div>
+  <p *ngIf="selection">Your City is:{{selection}}</p>
+</div>

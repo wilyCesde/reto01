@@ -12,7 +12,7 @@
   <li (click)="onClicked(city)" [ngClass]="{'selected':city, selection}">{{city}}</li>
 
 </ul>
-<div>
-  <p *ngIf="selection">Your City is:{{selection}}</p>
+<div *ngIf="selection">
+  <p >Your City is:{{selection}}</p>
   <button (click)="onClear()">Clear your selection</button>
 </div>
